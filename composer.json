@@ -1,0 +1,39 @@
+{
+    "name": "devop-core/dotenv",
+    "description": "DotEnv librabry",
+    "keywords": ["php", "dotenv"],
+    "homepage": "https://www.devop.studio",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DevOp Studio",
+            "email": "core@devop.studio",
+            "homepage": "https://www.devop.studio"
+        },
+        {
+            "name": "Zlatin Hristov",
+            "email": "about@z-latko.info",
+            "homepage": "https://z-latko.info",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+        "files": ["lib/functions.php"],
+        "psr-4": {
+            "DevOp\\Core\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DevOp\\Core\\Test\\": "tests"
+        }
+    }
+}
