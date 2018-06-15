@@ -36,7 +36,7 @@ include_once '../vendor/autoload.php';
 
 (new DevOp\Core\DotEnv())->load('.env')->toEnv();
 
-var_dump([getenv('APP_DEBUG'), getenv('APP_NAME'), env('APP_NAME'), env('VERSION', '1.0')]);
+var_dump([env('APP_DEBUG'), getenv('APP_DEBUG'), env('APP_NAME')]);
 ```
 
 ## Change log

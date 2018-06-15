@@ -39,19 +39,7 @@ class DotEnv
         
         list($key, $value) = explode('=', $values);
 
-        if (empty($value)) {
-            $parse = '';
-        } else if (in_array($value, ['true', 'false'])) {
-            $parse = $value === 'true';
-        } else if ($value === 'null') {
-            $parse = null;
-        } else if (in_array(substr($value, 0, 1), ['"', "'"])) {
-            $parse = substr($value, 1, -1);
-        } else {
-            $parse = $value;
-        }
-
-        $this->env[$key] = $parse;
+        $this->env[$key] = $value;
     }
 
     /**
