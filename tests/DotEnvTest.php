@@ -2,8 +2,9 @@
 namespace DevOp\Core\Test;
 
 use DevOp\Core\DotEnv;
+use PHPUnit\Framework\TestCase;
 
-class DotEnvTest extends \PHPUnit_Framework_TestCase
+class DotEnvTest extends TestCase
 {
 
     public function setUp()
